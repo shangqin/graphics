@@ -1,0 +1,101 @@
+site_name: Graphics Guide
+copyright: Copyright &copy; 2016 - 2023 Shang Qin
+docs_dir: docs
+repo_url: https://github.com/shangqin/graphics
+repo_name: Github
+nav:
+    - 'Graphics' : 'README.md'
+    - '图形API':
+        - 'OpenGL': 'api/opengl/opengl.md'
+        - 'OpenGL ES': 'api/opengles/opengles.md'
+        - 'Vulkan': 'api/vulkan/vulkan.md'
+    - '引擎':
+        - 'Unity': 'engine/unity/unity.md'
+        - 'Unreal Engine': 'engine/ue/ue.md'
+        - 'Filament': 'engine/filament/filament.md'
+    - '工具':
+        - 'RenderDoc' : 'tool/renderdoc/renderdoc.md'
+    - '性能优化':
+        - '移动游戏性能优化通用技法': 'performance/mobile_game_performance_optimization_techniques.md'
+        - 'Arm GPU Best Practices Developer Guide': 'performance/arm/arm_gpu_best_practices.md'
+        - 'Qualcomm Adreno GPU Best Practices': 'performance/qualcomm/qualcomm_adreno_gpu_best_practices.md'
+        - 'Imagination PowerVR Performance Recommendations Introduction': 'performance/imagination/powervr_performance_recommendations_introduction.md'
+        - 'Apple OpenGL ES Design Guidelines': 'performance/apple/apple_openes_design_guidelines.md'
+        - 'AMD RDNA Performance Guide': 'performance/amd/amd_rdna_performance_guide.md'
+theme:
+    icon:
+        repo: fontawesome/brands/github
+    language: zh
+    name: material
+    custom_dir: docs/css
+    features:
+        - content.code.annotate
+        - content.code.copy
+        - content.tooltips
+        - navigation.expand
+        - navigation.footer
+        - navigation.indexes
+        - navigation.sections
+        - navigation.instant
+        - navigation.tabs
+        - navigation.top
+        - navigation.tracking
+        - search.highlight
+        - search.share
+        - search.suggest
+        - toc.follow
+        - announce.dismiss
+    palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+plugins:
+    - glightbox
+    - search:
+        separator: '[\s\u200b\-]'
+    - git-revision-date-localized:
+        enable_creation_date: true
+        type: iso_datetime
+markdown_extensions:
+    - abbr
+    - admonition
+    - def_list
+    - footnotes
+    - md_in_html
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex:
+        generic: true
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.details
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.magiclink:
+        repo_url_shorthand: true
+        user: squidfunk
+        repo: mkdocs-material
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+extra_css:
+  - css/mkdocs_extra.css
+
