@@ -5,18 +5,24 @@ repo_url: https://github.com/shangqin/graphics
 repo_name: Github
 nav:
     - 'Graphics' : 
-      - 'Ray Tracing': 'graphics/raytracing.md'
+        - 'Texture Compression': 'graphics/texture_compression.md'
+        - 'Ray Tracing': 'graphics/raytracing.md'
     - 'API':
-        - 'OpenGL': 'api/opengl/opengl.md'
-        - 'OpenGL ES': 'api/opengles/opengles.md'
-        - 'Vulkan': 'api/vulkan/vulkan.md'
-    - 'Game Engine':
+        - 'OpenGL ES':
+            - 'Awesome OpenGL ES': 'api/opengles/opengles.md'
+            - 'Extension':
+                - 'GL_EXT_memory_object': 'api/opengles/extension/GL_EXT_memory_object.md'
+        - 'Vulkan':
+            - 'Awesome Vulkan': 'api/vulkan/vulkan.md'
+            - 'Extension':
+                - 'GL_EXT_memory_object': 'api/opengles/extension/GL_EXT_memory_object.md'
+    - 'Engine':
         - 'Unity': 'engine/unity/unity.md'
         - 'Unreal Engine': 'engine/ue/ue.md'
         - 'Filament': 'engine/filament/filament.md'
     - 'Tools':
         - 'RenderDoc' : 'tool/renderdoc/renderdoc.md'
-    - 'Performance Optimization':
+    - 'Performance':
         - '移动游戏性能优化通用技法': 'performance/mobile_game_performance_optimization_techniques.md'
         - 'Arm GPU Best Practices Developer Guide': 'performance/arm/arm_gpu_best_practices.md'
         - 'Qualcomm Adreno GPU Best Practices': 'performance/qualcomm/qualcomm_adreno_gpu_best_practices.md'
@@ -28,7 +34,7 @@ theme:
         repo: fontawesome/brands/github
     language: zh
     name: material
-    custom_dir: docs/css
+    custom_dir: css
     features:
         - content.code.annotate
         - content.code.copy
