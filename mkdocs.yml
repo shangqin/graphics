@@ -4,18 +4,19 @@ docs_dir: docs
 repo_url: https://github.com/shangqin/graphics
 repo_name: Github
 nav:
-    - 'Graphics' : 'README.md'
-    - '图形API':
+    - 'Graphics' : 
+      - 'Ray Tracing': 'graphics/raytracing.md'
+    - 'API':
         - 'OpenGL': 'api/opengl/opengl.md'
         - 'OpenGL ES': 'api/opengles/opengles.md'
         - 'Vulkan': 'api/vulkan/vulkan.md'
-    - '引擎':
+    - 'Game Engine':
         - 'Unity': 'engine/unity/unity.md'
         - 'Unreal Engine': 'engine/ue/ue.md'
         - 'Filament': 'engine/filament/filament.md'
-    - '工具':
+    - 'Tools':
         - 'RenderDoc' : 'tool/renderdoc/renderdoc.md'
-    - '性能优化':
+    - 'Performance Optimization':
         - '移动游戏性能优化通用技法': 'performance/mobile_game_performance_optimization_techniques.md'
         - 'Arm GPU Best Practices Developer Guide': 'performance/arm/arm_gpu_best_practices.md'
         - 'Qualcomm Adreno GPU Best Practices': 'performance/qualcomm/qualcomm_adreno_gpu_best_practices.md'
